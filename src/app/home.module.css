@@ -1,4 +1,4 @@
-.main {
+/* .main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -106,9 +106,9 @@
 
 .logo {
   position: relative;
-}
+} */
 /* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
+/* @media (hover: hover) and (pointer: fine) {
   .card:hover {
     background: rgba(var(--card-rgb), 0.1);
     border: 1px solid rgba(var(--card-border-rgb), 0.15);
@@ -123,10 +123,10 @@
   .card:hover span {
     transform: none;
   }
-}
+} */
 
 /* Mobile */
-@media (max-width: 700px) {
+/* @media (max-width: 700px) {
   .content {
     padding: 4rem;
   }
@@ -200,16 +200,16 @@
     );
     z-index: 1;
   }
-}
+} */
 
 /* Tablet and Smaller Desktop */
-@media (min-width: 701px) and (max-width: 1120px) {
+/* @media (min-width: 701px) and (max-width: 1120px) {
   .grid {
     grid-template-columns: repeat(2, 50%);
   }
-}
+} */
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   .vercelLogo {
     filter: invert(1);
   }
@@ -217,13 +217,82 @@
   .logo {
     filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
   }
-}
+} */
 
-@keyframes rotate {
+/* @keyframes rotate {
   from {
     transform: rotate(360deg);
   }
   to {
     transform: rotate(0deg);
   }
+} */
+
+.main {
+position: relative;
+display: flex;
+justify-content: space-around;
+height: 100vh;
 }
+
+.main .left {
+
+}
+
+.image {
+
+}
+
+.title {
+  color: #FFF;
+  text-align: center;
+  font-size: 120px;
+  font-weight: 400;
+  line-height: 70px; /* 58.333% */
+  letter-spacing: 18px;
+}
+.subtext {
+  color: #FFF;
+  font-size: 60px;
+  line-height: 70px;
+  letter-spacing: 0.15em;
+  text-align: center;
+}
+.subtext span {
+  color: #F28AF4;
+}
+
+.contbtn {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  align-items: center;
+}
+.contbtn button {
+  font-size: 29px;
+  line-height: 70px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  padding: 5.5px 55px;
+  border-radius: 20px;
+  min-width: 473px;
+  border: 7px solid #000;
+  background: #FFF;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  transition: all 0.6s ease-in-out;
+}
+
+.contbtn button:hover {
+    background: #BE90E2;
+}
+
+/* @supports (-webkit-text-stroke: 2px black) {
+  .title, .subtext {
+    -webkit-text-stroke: 2px black;
+    -webkit-text-fill-color: white;
+  }
+  .subtext span {
+    -webkit-text-stroke: 2px #BA00D9;
+    -webkit-text-fill-color: #F28AF4;
+  }
+} */
