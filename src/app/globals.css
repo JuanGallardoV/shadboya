@@ -126,3 +126,19 @@ button,a {
   background: rgba(0,0,0,0);
   border-width: 0;
 }
+
+nav {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  bottom: 0;
+  right: 0;
+}
+/* nav a {
+  transition: all 0.6s ease-in-out;
+  padding: 4px 0;
+} */
+
+/* nav a:hover {
+  background: #9747FF;
+} */

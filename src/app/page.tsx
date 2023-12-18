@@ -64,7 +64,7 @@ export default function Home() {
         </div>
       </div>
       <div className={styles.socials}>
-          <a href="https://shadboya.newgrounds.com">
+          <a href="https://shadboya.newgrounds.com" target='_blank'>
             <Image
               src="/logo_newgrounds.svg"
               alt="Newgrounds"
@@ -80,7 +80,7 @@ export default function Home() {
               height={80}
             />
           </button>
-          <a href="https://twitter.com/Shad_boya">
+          <a href="https://twitter.com/Shad_boya" target='_blank'>
             <Image
               src="/logo_x.svg"
               alt="X"
@@ -88,7 +88,7 @@ export default function Home() {
               height={80}
             />
           </a>
-          <a href="https://steamcommunity.com/id/Shad_boya/">
+          <a href="https://steamcommunity.com/id/Shad_boya/" target='_blank'>
             <Image
               src="/logo_steam.svg"
               alt="Steam"
