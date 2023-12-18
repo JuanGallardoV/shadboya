@@ -109,6 +109,7 @@ a {
 * {
   font-family: CC Wild Words;
   text-transform: uppercase;
+  margin: 0;
 }
 
 body {

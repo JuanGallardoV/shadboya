@@ -6,25 +6,25 @@ import Link from 'next/link';
 const links = [
   {
     name: 'Comissions Prices',
-    href: '/'
+    href: '/comissions-price'
   },
   {
     name: 'Terms of Service',
-    href: '/'
+    href: '/terms-of-service'
   },
   {
     name: 'About Me',
-    href: '/'
+    href: '/about-me'
   },
   {
     name: 'Gallery',
-    href: '/'
+    href: '/gallery'
   }
 ]
 
 const copyToClipboard = () => {
   navigator.clipboard
-      .writeText("Shadboi#")
+      .writeText("Shadboi#7154")
       .then(() => {
         alert("successfully copied");
       })
@@ -64,7 +64,7 @@ export default function Home() {
         </div>
       </div>
       <div className={styles.socials}>
-          <a href="#">
+          <a href="https://shadboya.newgrounds.com">
             <Image
               src="/logo_newgrounds.svg"
               alt="Newgrounds"
@@ -80,7 +80,7 @@ export default function Home() {
               height={80}
             />
           </button>
-          <a href="#">
+          <a href="https://twitter.com/Shad_boya">
             <Image
               src="/logo_x.svg"
               alt="X"
@@ -88,7 +88,7 @@ export default function Home() {
               height={80}
             />
           </a>
-          <a href="#">
+          <a href="https://steamcommunity.com/id/Shad_boya/">
             <Image
               src="/logo_steam.svg"
               alt="Steam"
