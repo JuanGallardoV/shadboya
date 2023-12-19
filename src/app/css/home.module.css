@@ -288,13 +288,13 @@ height: 100vh;
   text-align: center;
   /* min-width: 473px; */
   border: 7px solid #000;
-  background: #FFFFFFCC;
+  background: var(--bg-opacity);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   transition: all 0.6s ease-in-out;
 }
 
 .contbtn a:hover {
-    background: #BE90E2;
+    background: var(--light_purple);
 }
 
 .socials {

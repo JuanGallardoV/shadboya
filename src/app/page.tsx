@@ -17,8 +17,8 @@ const links = [
     href: '/about-me'
   },
   {
-    name: 'Gallery',
-    href: '/gallery'
+    name: 'galery',
+    href: '/galery'
   }
 ]
 

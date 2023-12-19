@@ -105,6 +105,11 @@ a {
     color-scheme: dark;
   }
 } */
+:root {
+  --pink: #F194E2;
+  --light_purple: #BE90E2;
+  --bg-opacity: #FFFFFFCC;
+}
 
 @font-face {
   font-family: "CCWildWordsLower Regular";
@@ -126,7 +131,8 @@ a {
 body {
   background-image: url(../../../public/bg-1440.png);
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  /* background-size: 100% 100%; */
+  background-size: cover;
   margin: 0;
 }
 
@@ -142,8 +148,8 @@ nav {
   position: absolute;
   display: flex;
   flex-direction: column;
-  bottom: 0;
-  right: 0;
+  bottom: 2vh;
+  right: 2vh;
 }
 /* nav a {
   transition: all 0.6s ease-in-out;

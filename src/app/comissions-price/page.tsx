@@ -4,10 +4,10 @@ import Image from 'next/image';
 
 export default function ComissionsPage() {
     return (
-        <div className={styles.grid}>
-            <div className={styles.colour}>
+        <main className={styles.grid}>
+            <div className={`${styles.colour} ${styles.bgOpacity}`}>
                 <h3 className={styles.subtitle}>Full <br></br> Colour</h3>
-                <div className={styles.gallery}>
+                <div className={styles.galery}>
                     <Image
                         src="/draws/acrid.png"
                         alt="Acrid"
@@ -39,9 +39,9 @@ export default function ComissionsPage() {
                     </p>
                 </div>
             </div>
-            <div className={styles.background}>
+            <div className={`${styles.background} ${styles.bgOpacity}`}>
                 <h3 className={styles.subtitle}>Drawn Background</h3>
-                <div className={styles.gallery}>
+                <div className={styles.galery}>
                     <Image
                         src="/draws/tf2_engie.png"
                         alt="TF2 Engie"
@@ -61,7 +61,7 @@ export default function ComissionsPage() {
                     Headshots: 15 USD + 10 USD Background
                 </p>
             </div>
-            <div className={styles.emotes}>
+            <div className={`${styles.pricing} ${styles.bgOpacity}`}>
                 <h3 className={styles.subtitle}>Emotes</h3>
                 <p className={styles.pricing}>
                     +10 Emotes : 15 USD <br></br>
@@ -69,14 +69,14 @@ export default function ComissionsPage() {
                     1 Emote : 3 USD
                 </p>
             </div>
-            <div className={styles.sketches}>
+            <div className={`${styles.sketches} ${styles.bgOpacity}`}>
                 <h3 className={styles.subtitle}>Sketches</h3>
                 <p className={styles.pricing}>
                     Line Art : 5~10 USD <br></br>
                     Painted Sketch : 5~15 USD
                 </p>
             </div>
-            <div className={styles.info}>
+            <div className={`${styles.info} ${styles.bgOpacity}`}>
                 <p>
                     The commission nsfw and sfw have the same 
                     value!
@@ -86,6 +86,6 @@ export default function ComissionsPage() {
                     expensive depending on the difficulty!
                 </p>
             </div>
-        </div>
+        </main>
     )
 }
