@@ -106,16 +106,27 @@ a {
   }
 } */
 
+@font-face {
+  font-family: "CCWildWordsLower Regular";
+  src: url("https://db.onlinewebfonts.com/t/3b18f58d506d3b88b9a6546f235166af.eot");
+  src: url("https://db.onlinewebfonts.com/t/3b18f58d506d3b88b9a6546f235166af.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/3b18f58d506d3b88b9a6546f235166af.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/3b18f58d506d3b88b9a6546f235166af.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/3b18f58d506d3b88b9a6546f235166af.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/3b18f58d506d3b88b9a6546f235166af.svg#CCWildWordsLower Regular")format("svg");
+}
+
 * {
-  font-family: CC Wild Words;
+  /* font-family: CC Wild Words; */
+  font-family: "CCWildWordsLower Regular";
   text-transform: uppercase;
   margin: 0;
 }
 
 body {
-  background-image: url(../../public/bg-1440.png);
+  background-image: url(../../../public/bg-1440.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   margin: 0;
 }
 
@@ -142,3 +153,10 @@ nav {
 /* nav a:hover {
   background: #9747FF;
 } */
+
+@media (max-width: 991px) {
+  body {
+    background-size: auto;
+    background-position-x: 45%;
+  }
+}

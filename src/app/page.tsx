@@ -1,6 +1,6 @@
 'use client';
 import Image from 'next/image'
-import styles from './home.module.css'
+import styles from './css/home.module.css'
 import Link from 'next/link';
 
 const links = [
