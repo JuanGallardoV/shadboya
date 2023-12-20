@@ -1,7 +1,9 @@
 'use client';
-import Image from 'next/image'
-import styles from './css/home.module.css'
+import Image from 'next/image';
+import styles from './css/home.module.css';
 import Link from 'next/link';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const links = [
   {
@@ -26,16 +28,28 @@ const copyToClipboard = () => {
   navigator.clipboard
       .writeText("Shadboi#7154")
       .then(() => {
-        alert("successfully copied");
+        toast.info("successfully copied");
       })
       .catch(() => {
-        alert("something went wrong");
+        toast.error("something went wrong");
       });
 }
 
 export default function Home() {
   return (
     <main className={styles.main}>
+      <ToastContainer
+          position="bottom-center"
+          autoClose={3000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss={false}
+          draggable={false}
+          pauseOnHover
+          theme="colored"
+        />
       <div className={styles.left}>
         <Image
           className={styles.img}

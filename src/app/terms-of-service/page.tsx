@@ -2,7 +2,7 @@ import styles from '../css/layout.module.css';
 
 export default function ToSPage() {
     return (
-        <main>
+        <main className={styles.main}>
             <h1 className={styles.title}>Terms of Service</h1>
             <div className={styles.flex}>
                 <div className={`${styles.left} ${styles.bgOpacity}`}>
