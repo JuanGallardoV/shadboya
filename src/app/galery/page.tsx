@@ -2,7 +2,7 @@ import styles from '../css/layout.module.css';
 
 export default function galeryPage() {
     return (
-        <>
+        <main>
             <h1 className={styles.title}>Galery</h1>
             <div className={styles.flex}>
                 <div className={`${styles.left} ${styles.bgOpacity}`}>
@@ -10,6 +10,6 @@ export default function galeryPage() {
                 </div>
                 <div className={`${styles.right} ${styles.bgOpacity}`}></div>
             </div>
-        </>
+        </main>
     )
 }

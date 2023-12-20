@@ -232,7 +232,7 @@
 position: relative;
 display: flex;
 justify-content: space-around;
-height: 100vh;
+height: 100%;
 }
 
 .main .left {
@@ -302,8 +302,11 @@ height: 100vh;
   display: flex;
   flex-direction: column;
   /* gap: 8px; */
-  bottom: 2vh;
-  left: 2vh;
+  bottom: 2vw;
+  left: 2vw;
+}
+.socials > * {
+  width: fit-content;
 }
 
 @media (max-width: 991px) {
@@ -333,5 +336,9 @@ height: 100vh;
     object-fit: contain;
     aspect-ratio: 1/1;
     height: unset !important;
+  }
+  .socials {
+    left: initial;
+    right: 2vw;
   }
 }

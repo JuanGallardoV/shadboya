@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function ComissionsPage() {
     return (
-        <main className={styles.grid}>
+        <div className={styles.grid}>
             <div className={`${styles.colour} ${styles.bgOpacity}`}>
                 <h3 className={styles.subtitle}>Full <br></br> Colour</h3>
                 <div className={styles.galery}>
@@ -86,6 +86,6 @@ export default function ComissionsPage() {
                     expensive depending on the difficulty!
                 </p>
             </div>
-        </main>
+        </div>
     )
 }

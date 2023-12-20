@@ -44,6 +44,7 @@ export default function Home() {
           width={655}
           height={880}
           priority
+          sizes='(max-width: 991px) 528px 360px'
         />
       </div>
       <div className={styles.right}>
@@ -70,6 +71,7 @@ export default function Home() {
               alt="Newgrounds"
               width={82}
               height={80}
+              sizes='(max-width: 991px) 59px 43px'
             />
           </a>
           <button onClick={copyToClipboard}>
@@ -78,6 +80,7 @@ export default function Home() {
               alt="Discord"
               width={82}
               height={80}
+              sizes='(max-width: 991px) 59px 60px'
             />
           </button>
           <a href="https://twitter.com/Shad_boya" target='_blank'>
@@ -86,6 +89,7 @@ export default function Home() {
               alt="X"
               width={82}
               height={80}
+              sizes='(max-width: 991px) 59px 60px'
             />
           </a>
           <a href="https://steamcommunity.com/id/Shad_boya/" target='_blank'>
@@ -94,6 +98,7 @@ export default function Home() {
               alt="Steam"
               width={82}
               height={80}
+              sizes='(max-width: 991px) 59px 60px'
             />
           </a>
       </div>

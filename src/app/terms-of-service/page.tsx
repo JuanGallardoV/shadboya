@@ -2,9 +2,9 @@ import styles from '../css/layout.module.css';
 
 export default function ToSPage() {
     return (
-        <>
+        <main>
             <h1 className={styles.title}>Terms of Service</h1>
-            <main className={styles.flex}>
+            <div className={styles.flex}>
                 <div className={`${styles.left} ${styles.bgOpacity}`}>
                     <h3 className={styles.subtitle}>Contact</h3>
                     <p>
@@ -33,7 +33,7 @@ export default function ToSPage() {
                         Thank you for your interest in commissioning me!
                     </p>
                 </div>
-            </main>
-        </>
+            </div>
+        </main>
     )
 }
