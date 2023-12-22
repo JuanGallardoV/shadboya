@@ -3,7 +3,7 @@ import styles from '../css/layout.module.css';
 export default function AboutPage() {
     return (
         <main className={styles.main}>
-            <div className={`${styles.centered} ${styles.bgOpacity}`}>
+            <div className={`${styles.centered} ${styles.bgOpacity} ${styles.maxWidth}`}>
                 <h3 className={styles.subtitle}>About Me</h3>
                 <p>
                     Hello! My name is Shadboi!, I am a Chilean artist who generally focuses on digital art while I finish my Engineering studies.

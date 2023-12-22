@@ -28,7 +28,7 @@ const copyToClipboard = () => {
   navigator.clipboard
       .writeText("Shadboi#7154")
       .then(() => {
-        toast.info("successfully copied");
+        toast.info("User ID Copied");
       })
       .catch(() => {
         toast.error("something went wrong");

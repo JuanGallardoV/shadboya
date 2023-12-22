@@ -33,12 +33,12 @@ export default function ComissionsPage() {
                             width={329}
                             height={365}
                         />
+                    </div>
                         <p className={styles.pricing}>
                             Full Body: 25 USD <br></br>
                             Half Body: 20 USD <br></br>
                             Headshots: 15 USD
                         </p>
-                    </div>
                 </div>
                 <div className={`${styles.background} ${styles.bgOpacity}`}>
                     <h3 className={styles.subtitle}>Drawn Background</h3>
@@ -62,7 +62,7 @@ export default function ComissionsPage() {
                         Headshots: 15 USD + 10 USD Background
                     </p>
                 </div>
-                <div className={`${styles.pricing} ${styles.bgOpacity}`}>
+                <div className={`${styles.emotes} ${styles.bgOpacity}`}>
                     <h3 className={styles.subtitle}>Emotes</h3>
                     <p className={styles.pricing}>
                         +10 Emotes : 15 USD <br></br>
