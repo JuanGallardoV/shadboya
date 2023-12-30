@@ -1,3 +1,7 @@
+.heighFull {
+  height: initial;
+}
+
 .main {
 position: relative;
 display: flex;
@@ -77,6 +81,10 @@ height: 100%;
 }
 .socials > * {
   width: fit-content;
+  /* transition: all 0.6s ease-in-out; */
+}
+.socials a:hover, .socials button:hover {
+  filter: invert(46%) sepia(61%) saturate(6575%) hue-rotate(248deg) brightness(99%) contrast(105%);
 }
 
 @media (max-width: 991px) {
@@ -102,11 +110,11 @@ height: 100%;
     z-index: -1;
     bottom: 0;
   }
-  .img {
+  /* .img {
     object-fit: contain;
     aspect-ratio: 1/1;
     height: unset !important;
-  }
+  } */
   .socials {
     left: initial;
     right: 2vw;

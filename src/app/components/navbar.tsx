@@ -5,6 +5,7 @@ import { IconContext } from 'react-icons';
 import { IoMdHome } from "react-icons/io";
 import { FaShoppingCart, FaInfo } from "react-icons/fa";
 import { BsFillFileTextFill } from "react-icons/bs";
+import { IoImages } from "react-icons/io5";
 
 const navLinks = [
     {
@@ -26,15 +27,18 @@ const navLinks = [
       name: 'Terms of Service',
       icon: BsFillFileTextFill,
       href: '/terms-of-service'
+    },
+    {
+      name: 'Gallery',
+      icon: IoImages,
+      href: '/gallery'
     }
   ]
 
 export default function Navbar() {
   const currentPage = usePathname();
     let links = navLinks.filter((link) => currentPage != link.href);
-    if(currentPage === '/') {
-        return;
-    } else {
+    if(currentPage != '/') {
         return (
             <nav>
               {links.map((link) => {
