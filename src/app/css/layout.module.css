@@ -70,7 +70,7 @@ p + .subtitle {
 #colour .gallery {
     gap: 21px;
 }
-.bgOpacity p {
+.bgOpacity .pricing {
     text-align: center;
     padding-top: 2vh;
 }
