@@ -31,6 +31,7 @@ body {
   /* background-size: 100% 100%; */
   background-size: cover;
   margin: 0;
+  position: relative;
 }
 
 button,a {
@@ -47,7 +48,7 @@ nav {
   display: flex;
   flex-direction: column;
   bottom: 0;
-  right: 1.5vh;
+  right: 0.9vw;
 }
 nav a:hover {
   filter: invert(46%) sepia(61%) saturate(6575%) hue-rotate(248deg) brightness(99%) contrast(105%);

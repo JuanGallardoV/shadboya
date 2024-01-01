@@ -1,7 +1,3 @@
-.heightFull {
-    height: initial;
-}
-
 .main {
     padding-top: calc(3vh - 1px);
 }
@@ -53,7 +49,7 @@ p + .subtitle {
 #emotes, #sketches {
     padding: 2vh 20px;
     /* max-width: 250px; */
-    max-width: calc(45% - 1.5vw);
+    max-width: calc(40% - 1.5vw);
 }
 #info {
     border-color: #990000;

@@ -38,6 +38,8 @@ const navLinks = [
 export default function Navbar() {
   const currentPage = usePathname();
     let links = navLinks.filter((link) => currentPage != link.href);
+    // document.documentElement.style.height = (currentPage != '/' ? "initial" : "100%");
+    // document.body.style.height = (currentPage != '/' ? "initial" : "100%");
     if(currentPage != '/') {
         return (
             <nav>

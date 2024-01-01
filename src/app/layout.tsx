@@ -20,8 +20,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className='heightFull'>
-      <body className='heightFull'>
+    <html lang="en">
+      <body>
         {children}
         <Navbar></Navbar>
         </body>
