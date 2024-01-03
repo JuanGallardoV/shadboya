@@ -1,5 +1,7 @@
 .main {
     padding-top: calc(3vh - 1px);
+    max-width: 1500px;
+    margin: auto;
 }
 .title {
     color: var(--pink);
@@ -41,7 +43,7 @@ p + .subtitle {
     text-align: center;
 }
 #colour {
-    padding: 2vh 15px;
+    padding: 1vh 15px;
 }
 #background {
     padding: 2vh 20px;
@@ -50,21 +52,30 @@ p + .subtitle {
     padding: 2vh 20px;
     /* max-width: 250px; */
     max-width: calc(40% - 1.5vw);
+    height: 16%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#emotes .pricing, #sketches .pricing {
+    padding: 0;
 }
 #info {
     border-color: #990000;
     width: 33vw;
-    max-width: 500px;
+    max-width: 440px;
 }
 .gallery {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 #background .gallery {
     gap: 9px;
 }
 #colour .gallery {
-    gap: 21px;
+    gap: 15px;
 }
 .bgOpacity .pricing {
     text-align: center;
@@ -95,7 +106,7 @@ p + .subtitle {
     text-align: center;
 }
 .bgOpacity p {
-font-size: clamp(10px, 2vmin ,25px);
+font-size: clamp(10px, 1.7vmin ,25px);
 /* line-height: 25px; */
 line-height: 150%;
 letter-spacing: 0.1em;

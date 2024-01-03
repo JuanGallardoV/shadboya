@@ -13,26 +13,26 @@ export default function ComissionsPage() {
                             <Image
                                 src="/draws/acrid.png"
                                 alt="Acrid"
-                                width={368}
-                                height={354}
+                                width={328}
+                                height={315}
                             />
                             <Image
                                 src="/draws/roberto.png"
                                 alt="Roberto"
-                                width={321}
-                                height={354}
+                                width={286}
+                                height={315}
                             />
                             <Image
                                 src="/draws/evelynn.png"
                                 alt="Evelynn"
-                                width={368}
-                                height={365}
+                                width={328}
+                                height={325}
                             />
                             <Image
                                 src="/draws/millie.png"
                                 alt="Millie"
-                                width={329}
-                                height={365}
+                                width={292}
+                                height={325}
                             />
                         </div>
                         <p className={styles.pricing}>
@@ -49,14 +49,14 @@ export default function ComissionsPage() {
                             <Image
                                 src="/draws/tf2_engie.png"
                                 alt="TF2 Engie"
-                                width={275}
-                                height={370}
+                                width={244}
+                                height={328}
                             />
                             <Image
                                 src="/draws/tf2_avatar.png"
                                 alt="TF2 Avatar"
-                                width={287}
-                                height={370}
+                                width={255}
+                                height={328}
                             />
                         </div>
                         <p className={styles.pricing}>

@@ -17,11 +17,11 @@ const links = [
   {
     name: 'About Me',
     href: '/about-me'
-  },
-  {
-    name: 'gallery',
-    href: '/gallery'
   }
+  // {
+  //   name: 'gallery',
+  //   href: '/gallery'
+  // }
 ]
 
 const copyToClipboard = () => {
