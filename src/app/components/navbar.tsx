@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { IconContext } from 'react-icons';
-import { IoMdHome } from "react-icons/io";
+import { IoMdHome, IoMdArrowRoundBack } from "react-icons/io";
 import { FaShoppingCart, FaInfo } from "react-icons/fa";
 import { BsFillFileTextFill } from "react-icons/bs";
 // import { IoImages } from "react-icons/io5";
@@ -38,13 +38,12 @@ const navLinks = [
 export default function Navbar() {
   const currentPage = usePathname();
     let links = navLinks.filter((link) => currentPage != link.href);
-    // document.documentElement.style.height = (currentPage != '/' ? "initial" : "100%");
-    // document.body.style.height = (currentPage != '/' ? "initial" : "100%");
     if(currentPage != '/') {
         return (
             <nav>
               {links.map((link) => {
               const LinkIcon = link.icon;
+              let arrowBack = (link.name === 'Home' ? <IoMdArrowRoundBack/> : '')
               return (
                   <Link
                   key={link.name}
@@ -52,6 +51,7 @@ export default function Navbar() {
                   >
                   <IconContext.Provider value={{ size: "55px" }}>
                       <LinkIcon/>
+                      {arrowBack}
                   </IconContext.Provider>
                   </Link>
               );

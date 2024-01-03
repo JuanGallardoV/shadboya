@@ -50,6 +50,9 @@ nav {
   bottom: 1.5vh;
   right: 1vw;
 }
+nav a[href='/'] svg:not(:first-child) {
+  display: none;
+}
 nav a:hover {
   filter: invert(46%) sepia(61%) saturate(6575%) hue-rotate(248deg) brightness(99%) contrast(105%);
 }
@@ -59,8 +62,22 @@ ul {
 }
 
 @media (max-width: 991px) {
+  html, body {
+    height: initial;
+  }
   body {
     background-size: auto;
     background-position-x: 45%;
+  }
+  nav {
+    bottom: 0;
+    top: 1vh;
+    left: 0;
+  }
+  nav a:not([href='/']), nav a[href='/'] svg:first-child {
+    display: none;
+  }
+  nav a[href='/'] svg:not(:first-child) {
+    display: block;
   }
 }

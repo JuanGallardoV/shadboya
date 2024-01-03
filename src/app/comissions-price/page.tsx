@@ -5,10 +5,11 @@ import Image from 'next/image';
 export default function ComissionsPage() {
     return (
         <main className={styles.main}>
+            <h1 className={`${styles.title} ${styles.mobile}`}>Prices</h1>
             <div className={styles.flex} id={styles.flexMult}>
                 <div className={styles.left}>
                     <div className={styles.bgOpacity} id={styles.colour}>
-                        <h3 className={styles.subtitle}>Full <br></br> Colour</h3>
+                        <h3 className={styles.subtitle}>Full <br className={styles.desktop}></br> Colour</h3>
                         <div className={styles.gallery}>
                             <Image
                                 src="/draws/acrid.png"
