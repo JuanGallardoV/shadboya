@@ -73,6 +73,7 @@ ul {
     bottom: 0;
     top: 1vh;
     left: 0;
+    height: fit-content;
   }
   nav a:not([href='/']), nav a[href='/'] svg:first-child {
     display: none;

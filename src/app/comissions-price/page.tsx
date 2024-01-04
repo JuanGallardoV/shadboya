@@ -1,6 +1,43 @@
 import styles from '../css/layout.module.css';
 import Image from 'next/image';
+import GallerySlider from '../components/gallerySlider';
 
+
+const fullColour = [
+    {
+        name: 'acrid',
+        width: 328,
+        height: 315
+    },
+    {
+        name: 'roberto',
+        width: 286,
+        height: 315
+    },
+    {
+        name: 'evelynn',
+        width: 328,
+        height: 325
+    },
+    {
+        name: 'millie',
+        width: 292,
+        height: 325
+    }
+]
+
+const background = [
+    {
+        name: 'tf2_engie',
+        width: 244,
+        height: 328
+    },
+    {
+        name: 'tf2_avatar',
+        width: 255,
+        height: 328
+    }
+]
 
 export default function ComissionsPage() {
     return (
@@ -11,30 +48,7 @@ export default function ComissionsPage() {
                     <div className={styles.bgOpacity} id={styles.colour}>
                         <h3 className={styles.subtitle}>Full <br className={styles.desktop}></br> Colour</h3>
                         <div className={styles.gallery}>
-                            <Image
-                                src="/draws/acrid.png"
-                                alt="Acrid"
-                                width={328}
-                                height={315}
-                            />
-                            <Image
-                                src="/draws/roberto.png"
-                                alt="Roberto"
-                                width={286}
-                                height={315}
-                            />
-                            <Image
-                                src="/draws/evelynn.png"
-                                alt="Evelynn"
-                                width={328}
-                                height={325}
-                            />
-                            <Image
-                                src="/draws/millie.png"
-                                alt="Millie"
-                                width={292}
-                                height={325}
-                            />
+                            <GallerySlider images={fullColour}/>
                         </div>
                         <p className={styles.pricing}>
                             Full Body: 25 USD <br></br>
@@ -47,7 +61,7 @@ export default function ComissionsPage() {
                     <div className={styles.bgOpacity} id={styles.background}>
                         <h3 className={styles.subtitle}>Drawn Background</h3>
                         <div className={styles.gallery}>
-                            <Image
+                            {/* <Image
                                 src="/draws/tf2_engie.png"
                                 alt="TF2 Engie"
                                 width={244}
@@ -58,7 +72,8 @@ export default function ComissionsPage() {
                                 alt="TF2 Avatar"
                                 width={255}
                                 height={328}
-                            />
+                            /> */}
+                            <GallerySlider images={background}/>
                         </div>
                         <p className={styles.pricing}>
                             Full Body: 25 USD + 10 USD Background <br></br>

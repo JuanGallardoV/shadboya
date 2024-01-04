@@ -73,15 +73,15 @@ p + .subtitle {
     max-width: 440px;
 }
 .gallery {
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: center; */
 }
 #background .gallery {
-    gap: 9px;
+    /* gap: 9px; */
 }
 #colour .gallery {
-    gap: 15px;
+    /* gap: 15px; */
 }
 .bgOpacity .pricing {
     text-align: center;
@@ -172,8 +172,8 @@ letter-spacing: 0.1em;
         line-height: 250%;
     }
     #colour .gallery {
-        overflow: auto;
+        /* overflow: auto;
         flex-wrap: nowrap;
-        justify-content: flex-start;
+        justify-content: flex-start; */
     }
 }
