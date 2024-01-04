@@ -47,9 +47,7 @@ export default function ComissionsPage() {
                 <div className={styles.left}>
                     <div className={styles.bgOpacity} id={styles.colour}>
                         <h3 className={styles.subtitle}>Full <br className={styles.desktop}></br> Colour</h3>
-                        <div className={styles.gallery}>
                             <GallerySlider images={fullColour}/>
-                        </div>
                         <p className={styles.pricing}>
                             Full Body: 25 USD <br></br>
                             Half Body: 20 USD <br></br>
@@ -60,21 +58,7 @@ export default function ComissionsPage() {
                 <div className={styles.right}>
                     <div className={styles.bgOpacity} id={styles.background}>
                         <h3 className={styles.subtitle}>Drawn Background</h3>
-                        <div className={styles.gallery}>
-                            {/* <Image
-                                src="/draws/tf2_engie.png"
-                                alt="TF2 Engie"
-                                width={244}
-                                height={328}
-                            />
-                            <Image
-                                src="/draws/tf2_avatar.png"
-                                alt="TF2 Avatar"
-                                width={255}
-                                height={328}
-                            /> */}
                             <GallerySlider images={background}/>
-                        </div>
                         <p className={styles.pricing}>
                             Full Body: 25 USD + 10 USD Background <br></br>
                             Half Body: 20 USD + 10 USD Background <br></br>

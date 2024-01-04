@@ -4,8 +4,13 @@ import useEmblaCarousel from 'embla-carousel-react';
 import Image from 'next/image';
 import styles from '../css/slider.module.css'
 
+const options = {
+    loop: true,
+    
+}
+
 export default function GallerySlider({ images }: any) {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, active: true, align: 'center', direction: 'rtl', breakpoints: { '(min-width: 990px)': { active: false } } })
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, active: true, align: 'start', direction: 'rtl', startIndex: 0, breakpoints: { '(min-width: 990px)': { active: false } } })
   return (
     <div className={styles.embla} dir="rtl">
       <div className={styles.embla__viewport} ref={emblaRef}>
