@@ -13,8 +13,8 @@ export default function ToSPage() {
                     </p>
                     <h3 className={styles.subtitle}>Terms of Service</h3>
                     <p>
-                    Once I start with your commission, refunds are not accepted. You're only getting a digital illustration, the final product will be sent on
-                    email or private message, I won't remove my watermarks on my Illustrations. I will consistently provide progress updates on the illustration
+                    Once I start with your commission, refunds are not accepted. You&apos;re only getting a digital illustration, the final product will be sent on
+                    email or private message, I won&apos;t remove my watermarks on my Illustrations. I will consistently provide progress updates on the illustration
                     (sketch, lineart, base color and shading), allowing the client to add minor suggestions or adjustments. (Maximum response time: 3 days)
                     After the commission is finished, you can do whatever you want without removing the watermark.
                     </p>
