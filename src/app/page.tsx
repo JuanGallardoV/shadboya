@@ -58,12 +58,14 @@ export default function Home() {
           width={655}
           height={880}
           priority
-          sizes='(max-width: 991px) 528px 360px'
+          layout='intrinsic'
         />
       </div>
       <div className={styles.right}>
-        <h1 className={styles.title}>Shadboi</h1>
-        <h3 className={styles.subtext}>Comissions<br/><span>Open</span></h3>
+        <div className={styles.cont}>
+          <h1 className={styles.title}>Shadboi</h1>
+          <h3 className={styles.subtext}>Comissions<br/><span>Open</span></h3>
+        </div>
         <div className={styles.contbtn}>
         {links.map((link) => {
         return (
@@ -85,7 +87,7 @@ export default function Home() {
               alt="Newgrounds"
               width={82}
               height={80}
-              sizes='(max-width: 991px) 59px 43px'
+              layout='responsive'
             />
           </a>
           <button onClick={copyToClipboard}>
@@ -94,7 +96,7 @@ export default function Home() {
               alt="Discord"
               width={82}
               height={80}
-              sizes='(max-width: 991px) 59px 60px'
+              layout='responsive'
             />
           </button>
           <a href="https://twitter.com/Shad_boya" target='_blank'>
@@ -103,7 +105,7 @@ export default function Home() {
               alt="X"
               width={82}
               height={80}
-              sizes='(max-width: 991px) 59px 60px'
+              layout='responsive'
             />
           </a>
           <a href="https://steamcommunity.com/id/Shad_boya/" target='_blank'>
@@ -112,7 +114,7 @@ export default function Home() {
               alt="Steam"
               width={82}
               height={80}
-              sizes='(max-width: 991px) 59px 60px'
+              layout='responsive'
             />
           </a>
       </div>

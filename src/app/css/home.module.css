@@ -29,7 +29,6 @@ height: 100%;
 .subtext {
   color: #FFF;
   font-size: 60px;
-  /* line-height: 70px; */
   letter-spacing: 9px;
   text-align: center;
   margin-bottom: 13px;
@@ -46,7 +45,6 @@ height: 100%;
   display: flex;
   flex-direction: column;
   gap: 13px;
-  /* align-items: center; */
 }
 .contbtn a {
   font-size: 29px;
@@ -56,7 +54,6 @@ height: 100%;
   padding: 5.5px 55px;
   border-radius: 20px;
   text-align: center;
-  /* min-width: 473px; */
   border: 7px solid #000;
   background: var(--bg-opacity);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -71,22 +68,25 @@ height: 100%;
   position: absolute;
   display: flex;
   flex-direction: column;
-  /* gap: 8px; */
   bottom: 2vw;
   left: 2vw;
 }
 .socials > * {
   width: fit-content;
-  /* transition: all 0.6s ease-in-out; */
 }
 .socials a:hover, .socials button:hover {
   filter: invert(46%) sepia(61%) saturate(6575%) hue-rotate(248deg) brightness(99%) contrast(105%);
 }
 
 @media (max-width: 991px) {
+  .main {
+    height: 100vh;
+    justify-content: center;
+  }
   .title {
     font-size: clamp(30px, 6vh, 50px);
     letter-spacing: 7.5px;
+    margin: 28px 0;
   }
   .subtext {
     line-height: 150%;
@@ -101,18 +101,30 @@ height: 100%;
   .subtext span {
     text-shadow: rgb(186, 0, 217) 6px 0px 0px, rgb(186, 0, 217) 5.91686px 0.995377px 0px, rgb(186, 0, 217) 5.66974px 1.96317px 0px, rgb(186, 0, 217) 5.2655px 2.87655px 0px, rgb(186, 0, 217) 4.71532px 3.71022px 0px, rgb(186, 0, 217) 4.03447px 4.44106px 0px, rgb(186, 0, 217) 3.24181px 5.04883px 0px, rgb(186, 0, 217) 2.35931px 5.51667px 0px, rgb(186, 0, 217) 1.41143px 5.83163px 0px, rgb(186, 0, 217) 0.424423px 5.98497px 0px, rgb(186, 0, 217) -0.574341px 5.97245px 0px, rgb(186, 0, 217) -1.55719px 5.79441px 0px, rgb(186, 0, 217) -2.49688px 5.45578px 0px, rgb(186, 0, 217) -3.36738px 4.96596px 0px, rgb(186, 0, 217) -4.14455px 4.33852px 0px, rgb(186, 0, 217) -4.80686px 3.59083px 0px, rgb(186, 0, 217) -5.33596px 2.74364px 0px, rgb(186, 0, 217) -5.71718px 1.8204px 0px, rgb(186, 0, 217) -5.93995px 0.84672px 0px, rgb(186, 0, 217) -5.99811px -0.150428px 0px, rgb(186, 0, 217) -5.89004px -1.14341px 0px, rgb(186, 0, 217) -5.61874px -2.1047px 0px, rgb(186, 0, 217) -5.19172px -3.00766px 0px, rgb(186, 0, 217) -4.62082px -3.82727px 0px, rgb(186, 0, 217) -3.92186px -4.54081px 0px, rgb(186, 0, 217) -3.11421px -5.12852px 0px, rgb(186, 0, 217) -2.22026px -5.57409px 0px, rgb(186, 0, 217) -1.26477px -5.86518px 0px, rgb(186, 0, 217) -0.274238px -5.99373px 0px, rgb(186, 0, 217) 0.723898px -5.95617px 0px, rgb(186, 0, 217) 1.70197px -5.75355px 0px, rgb(186, 0, 217) 2.63288px -5.39147px 0px, rgb(186, 0, 217) 3.49082px -4.87998px 0px, rgb(186, 0, 217) 4.25202px -4.23324px 0px, rgb(186, 0, 217) 4.89538px -3.46919px 0px, rgb(186, 0, 217) 5.40307px -2.60899px 0px, rgb(186, 0, 217) 5.76102px -1.67649px 0px, rgb(186, 0, 217) 5.95932px -0.697531px 0px;
   }
-  .left {
+  .main .left {
     position: absolute;
     z-index: -1;
     bottom: 0;
   }
-  /* .img {
-    object-fit: contain;
-    aspect-ratio: 1/1;
-    height: unset !important;
-  } */
+  .main .right {
+    justify-content: space-between;
+  }
+  .contbtn {
+    width: 85%;
+    margin: 7vh auto;
+  }
+  .contbtn .btn {
+    font-size: clamp(15px, 2vw, 25px);
+    padding: 10px 0;
+    line-height: normal;
+  }
   .socials {
     left: initial;
     right: 2vw;
+    bottom: 30%;
+    align-items: end;
+  }
+  .socials > * {
+    width: 70%;
   }
 }

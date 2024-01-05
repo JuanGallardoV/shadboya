@@ -68,13 +68,14 @@ ul {
   }
   body {
     background-size: auto;
-    background-position-x: 45%;
+    background-position-x: 50%;
   }
   nav {
     bottom: 0;
     top: 1vh;
     left: 0;
     height: fit-content;
+    width: fit-content;
   }
   nav a:not([href='/']), nav a[href='/'] svg:first-child {
     display: none;

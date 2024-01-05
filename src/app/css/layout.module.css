@@ -102,6 +102,9 @@ p + .subtitle {
     width: 50%;
 }
 @media (max-width: 990px) {
+    .main {
+        padding-bottom: 2.5vh;
+    }
     .mobile {
         display: block;
     }
@@ -113,19 +116,19 @@ p + .subtitle {
         border: 7px solid #000;
         border-radius: 30px;
         gap: 0;
-        /* padding: 26px 50px; */
         padding: 2vh 3vw;
         height: fit-content;
         flex-direction: column;
-        width: 80%;
+        width: 88% !important;
         overflow: auto;
         max-height: 80vh;
     }
     .title {
         font-size: 25px;
+        padding: calc(1vh - 1px) 0;
     }
-    .subtitle {
-        margin: 15px 0 !important;
+    p + .subtitle {
+        margin: 15px 0;
     }
     .bgOpacity:not(.centered) {
         background: none;
