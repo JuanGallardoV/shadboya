@@ -24,6 +24,13 @@
     align-items: center;
 }
 
+@media (max-width : 1366px) and (max-height : 800px) {
+    .embla__slide img {
+        max-width: 65%;
+        height: auto;
+    }
+}
+
 @media (min-width: 990px) {
     .embla__container {
         flex-wrap: wrap;
@@ -33,7 +40,7 @@
         gap: 15px;
     }
 
-    .embla__slide{
+    .embla__slide {
         flex: initial;
         padding: 0;
     }

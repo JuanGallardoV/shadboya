@@ -49,7 +49,7 @@ nav {
   display: flex;
   flex-direction: column;
   bottom: 1.5vh;
-  right: 1vw;
+  right: 0.7vw;
 }
 nav a[href='/'] svg:not(:first-child) {
   display: none;
