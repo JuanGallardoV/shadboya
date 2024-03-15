@@ -60,9 +60,7 @@ export default function ComissionsPage() {
                         <h3 className={styles.subtitle}>Drawn Background</h3>
                             <GallerySlider images={background}/>
                         <p className={styles.pricing}>
-                            Full Body: 25 USD + 10 USD Background <br></br>
-                            Half Body: 20 USD + 10 USD Background <br></br>
-                            Headshots: 15 USD + 10 USD Background
+                            15-25 USD Background
                         </p>
                     </div>
                     <div className={styles.bgOpacity} id={styles.emotes}>
