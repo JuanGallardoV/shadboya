@@ -28,10 +28,10 @@ const copyToClipboard = () => {
   navigator.clipboard
       .writeText("Shadboi#7154")
       .then(() => {
-        toast.info("User ID Copied", {toastId: 'discord'});
+        toast.info("User ID Copied", {containerId: 'discord'});
       })
       .catch(() => {
-        toast.error("something went wrong", {toastId: 'discord'});
+        toast.error("something went wrong", {containerId: 'discord'});
       });
 }
 

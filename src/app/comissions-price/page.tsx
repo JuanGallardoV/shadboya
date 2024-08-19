@@ -79,7 +79,8 @@ export default function ComissionsPage() {
         draggable: true,
         progress: undefined,
         theme: "light",
-        toastId: 'text'
+        toastId: 'text',
+        containerId: 'text'
         });
   
       notify();
