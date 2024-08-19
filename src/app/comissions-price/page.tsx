@@ -48,20 +48,9 @@ const changeTab = (event: any) => {
     })
 }
 
-const toastText = 'The commission nsfw and sfw have the same value! extra characters increase the price! The prices are referential! They can be cheaper or more expensive depending on the difficulty!';
-
-toast(toastText, {
-    autoClose: false,
-    hideProgressBar: true,
-    closeOnClick: true,
-    pauseOnHover: true,
-    draggable: true,
-    progress: undefined,
-    theme: "light",
-    toastId: 'text'
-    });
-
 export default function ComissionsPage() {
+
+    const toastText = 'The commission nsfw and sfw have the same value! extra characters increase the price! The prices are referential! They can be cheaper or more expensive depending on the difficulty!';
     const [screenWidth, setScreenWidth] = useState(
         typeof window !== "undefined" ? window.innerWidth : 0,
       );
