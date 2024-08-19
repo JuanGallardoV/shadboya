@@ -3,6 +3,7 @@ import useEmblaCarousel from 'embla-carousel-react';
 import AutoHeight from 'embla-carousel-auto-height';
 import Image from 'next/image';
 import styles from '../css/slider.module.css'
+import { useEffect } from 'react';
 
 const options = {
     loop: true,
@@ -10,7 +11,10 @@ const options = {
 }
 
 export default function GallerySlider({ images }: any) {
-  const [emblaRef] = useEmblaCarousel({ loop: true, active: true, align: 'start', direction: 'rtl', startIndex: 0 }, [AutoHeight()])
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, active: true, align: 'start', direction: 'rtl', startIndex: 0 }, [AutoHeight()])
+  useEffect(() => {
+    emblaApi?.plugins().autoHeight.init
+  }, [])
   return (
     <div className={styles.embla} dir="rtl">
       <div className={styles.embla__viewport} ref={emblaRef}>
