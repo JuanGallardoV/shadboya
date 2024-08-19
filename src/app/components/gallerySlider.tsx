@@ -24,7 +24,7 @@ export default function GallerySlider({ images }: any) {
                 height={0}
                 sizes="100vw"
                 style={{ width: '600px', height: 'auto' }}
-                priority
+                priority= {true}
               />
             </div>
           ))}
