@@ -28,10 +28,10 @@ const copyToClipboard = () => {
   navigator.clipboard
       .writeText("Shadboi#7154")
       .then(() => {
-        toast.info("User ID Copied");
+        toast.info("User ID Copied", {toastId: 'discord'});
       })
       .catch(() => {
-        toast.error("something went wrong");
+        toast.error("something went wrong", {toastId: 'discord'});
       });
 }
 
@@ -49,6 +49,7 @@ export default function Home() {
           draggable={false}
           pauseOnHover
           theme="colored"
+          containerId='discord'
         />
       <div className={styles.left}>
         <Image

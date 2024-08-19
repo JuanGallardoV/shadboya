@@ -97,6 +97,7 @@ export default function ComissionsPage() {
                 draggable
                 theme="light"
                 toastStyle={{ backgroundColor: '#FFFFFFCC', color: 'black', border: '3px solid #990000'}}
+                containerId='text'
                 />
             <h1 className={`${styles.title} ${styles.mobile}`}>Prices</h1>
             <div className={styles.flex} id={styles.flexMult}>
