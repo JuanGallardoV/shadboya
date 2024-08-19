@@ -58,6 +58,7 @@ toast(toastText, {
     draggable: true,
     progress: undefined,
     theme: "light",
+    toastId: 'text'
     });
 
 export default function ComissionsPage() {
@@ -66,6 +67,24 @@ export default function ComissionsPage() {
       );
     const isMobile = screenWidth <= 600;
     const toastPosition = isMobile ? 'bottom-center' : 'top-right';
+
+    const [show, hide] = useState(true);
+  
+    useEffect(() => {
+      const notify = () => toast(toastText, {
+        autoClose: false,
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        toastId: 'text'
+        });
+  
+      notify();
+    }, [])
+    
     return (
         <main className={styles.main}>
             <ToastContainer
