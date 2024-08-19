@@ -27,7 +27,7 @@ html, body {
 }
 
 body {
-  background-image: url(../../../public/bg-1440.png);
+  background-image: url(../../../public/bg_v2.jpg);
   background-repeat: no-repeat;
   /* background-size: 100% 100%; */
   background-size: cover;
@@ -63,11 +63,11 @@ ul {
 }
 
 @media (max-width: 991px) {
-  html, body {
+  /* html, body {
     height: initial;
-  }
+  } */
   body {
-    background-size: auto;
+    background-size: cover;
     background-position-x: 50%;
   }
   nav {

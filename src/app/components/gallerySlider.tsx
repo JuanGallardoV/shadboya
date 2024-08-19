@@ -1,6 +1,6 @@
 'use client';
-import { useEffect } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
+import AutoHeight from 'embla-carousel-auto-height';
 import Image from 'next/image';
 import styles from '../css/slider.module.css'
 
@@ -10,7 +10,7 @@ const options = {
 }
 
 export default function GallerySlider({ images }: any) {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, active: true, align: 'start', direction: 'rtl', startIndex: 0, breakpoints: { '(min-width: 990px)': { active: false } } })
+  const [emblaRef] = useEmblaCarousel({ loop: true, active: true, align: 'start', direction: 'rtl', startIndex: 0 }, [AutoHeight()])
   return (
     <div className={styles.embla} dir="rtl">
       <div className={styles.embla__viewport} ref={emblaRef}>
@@ -18,10 +18,13 @@ export default function GallerySlider({ images }: any) {
           {images.map((image: any) => (
             <div className={styles.embla__slide} key={image.name}>
               <Image
-                src={`/draws/${image.name}.png`}
+                src={`/draws/${image.name}.jpg`}
                 alt={image.name}
-                width={image.width}
-                height={image.height}
+                width={0}
+                height={0}
+                sizes="100vw"
+                style={{ width: '600px', height: 'auto' }}
+                priority
               />
             </div>
           ))}

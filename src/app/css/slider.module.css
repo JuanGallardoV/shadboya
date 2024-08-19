@@ -12,6 +12,8 @@
     backface-visibility: hidden;
     display: flex;
     touch-action: pan-y;
+    transition: height 0.2s;
+    align-items: flex-start;
 }
 
 .embla__slide {
@@ -30,8 +32,12 @@
         height: auto;
     }
 }
-
-@media (min-width: 990px) {
+@media (max-width: 990px) {
+    .embla__slide img {
+        width: 100% !important;
+    }
+}
+/* @media (min-width: 990px) {
     .embla__container {
         flex-wrap: wrap;
         margin: auto;
@@ -44,4 +50,4 @@
         flex: initial;
         padding: 0;
     }
-}
+} */
