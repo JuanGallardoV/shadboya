@@ -12,14 +12,25 @@ const options = {
 
 export default function GallerySlider({ images }: any) {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, active: true, align: 'start', direction: 'rtl', startIndex: 0 }, [AutoHeight()])
-  useEffect(() => {
-    emblaApi?.plugins().autoHeight.init
-  }, [])
   return (
     <div className={styles.embla} dir="rtl">
       <div className={styles.embla__viewport} ref={emblaRef}>
         <div className={styles.embla__container}>
-          {images.map((image: any) => (
+          {images.map((image: any, index: any) => (
+            index == 0 ?
+            <div className={styles.embla__slide} key={image.name}>
+              <Image
+                src={`/draws/${image.name}.jpg`}
+                alt={image.name}
+                width={0}
+                height={0}
+                sizes="100vw"
+                style={{ width: '600px', height: 'auto' }}
+                priority= {true}
+                onLoadingComplete={() => emblaApi?.reInit()}
+              />
+            </div>
+            :
             <div className={styles.embla__slide} key={image.name}>
               <Image
                 src={`/draws/${image.name}.jpg`}
