@@ -104,7 +104,7 @@ export default function ComissionsPage() {
                             <p className={styles.pricing}>
                                 Full Body: 50 USD <br></br>
                                 Half Body: 45 USD <br></br>
-                                Headshots: 30 USD
+                                Headshots: 35 USD
                             </p>
                         </div>
                     </div>
@@ -113,7 +113,7 @@ export default function ComissionsPage() {
                             <h3 className={styles.subtitle}>Drawn Background</h3>
                             <GallerySlider images={background} />
                             <p className={styles.pricing}>
-                                15-25 USD Background
+                                20-30 USD Background
                             </p>
                         </div>
                         {/* <div className={styles.bgOpacity} id={styles.emotes}>
@@ -127,8 +127,8 @@ export default function ComissionsPage() {
                         <div className={styles.bgOpacity} id={styles.sketches} data-id='sketches'>
                             <h3 className={styles.subtitle}>Sketches</h3>
                             <p className={styles.pricing}>
-                                Line Art : 10~15 USD <br></br>
-                                Painted Sketch : 10~ USD
+                                Line Art : 15~20 USD <br></br>
+                                Painted Sketch : 15~ USD
                             </p>
                         </div>
                     </div>
