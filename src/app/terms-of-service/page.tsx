@@ -8,7 +8,7 @@ export default function ToSPage() {
                 <div className={`${styles.left} ${styles.bgOpacity}`}>
                     <h3 className={styles.subtitle}>Contact</h3>
                     <p>
-                    Send me a message via Twitter, Steam with a clear reference of the character, pose, background or props you would like on the illustration.
+                    Send me a message via Discord or Steam (Links in homepage)  with a clear reference of the character, pose, background or props you would like on the illustration.
                     Payment is through Paypal, You must send the full payment before I start working on the commission.
                     </p>
                     <h3 className={styles.subtitle}>Terms of Service</h3>
