@@ -50,7 +50,7 @@ const changeTab = (event: any) => {
 
 export default function ComissionsPage() {
 
-    const toastText = 'The commission nsfw and sfw have the same value! extra characters increase the price! The prices are referential! They can be cheaper or more expensive depending on the difficulty!';
+    const toastText = 'NSFW and SFW has the price, payment fee is added after the price, price may vary based on difficulty or extras characters';
     const [screenWidth, setScreenWidth] = useState(
         typeof window !== "undefined" ? window.innerWidth : 0,
       );
@@ -127,8 +127,7 @@ export default function ComissionsPage() {
                         <div className={styles.bgOpacity} id={styles.sketches} data-id='sketches'>
                             <h3 className={styles.subtitle}>Sketches</h3>
                             <p className={styles.pricing}>
-                                Line Art : 15~20 USD <br></br>
-                                Painted Sketch : 15~ USD
+                                Sketch prices : 20-30 USD
                             </p>
                         </div>
                     </div>
