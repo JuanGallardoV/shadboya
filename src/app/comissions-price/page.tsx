@@ -50,7 +50,7 @@ const changeTab = (event: any) => {
 
 export default function ComissionsPage() {
 
-    const toastText = 'NSFW and SFW has the price, payment fee is added after the price, price may vary based on difficulty or extras characters';
+    const toastText = 'NSFW and SFW has same the price, payment fee is added after the price, price may vary based on difficulty or extras characters';
     const [screenWidth, setScreenWidth] = useState(
         typeof window !== "undefined" ? window.innerWidth : 0,
       );
@@ -102,9 +102,9 @@ export default function ComissionsPage() {
                             <h3 className={styles.subtitle}>Full Colour</h3>
                             <GallerySlider images={fullColour} />
                             <p className={styles.pricing}>
-                                Full Body: 50 USD <br></br>
-                                Half Body: 45 USD <br></br>
-                                Headshots: 35 USD
+                                Full Body: 55 USD <br></br>
+                                Half Body: 50 USD <br></br>
+                                Headshots: 40 USD
                             </p>
                         </div>
                     </div>
@@ -127,7 +127,7 @@ export default function ComissionsPage() {
                         <div className={styles.bgOpacity} id={styles.sketches} data-id='sketches'>
                             <h3 className={styles.subtitle}>Sketches</h3>
                             <p className={styles.pricing}>
-                                Sketch prices : 20-30 USD
+                                Sketch prices : 25-35 USD
                             </p>
                         </div>
                     </div>
