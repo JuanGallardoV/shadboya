@@ -50,7 +50,7 @@ const changeTab = (event: any) => {
 
 export default function ComissionsPage() {
 
-    const toastText = 'NSFW does'nt increase pricing, payment fee is added after the price, price can increase based on difficulty or extras characters';
+    const toastText = "NSFW does'nt increase pricing, payment fee is added after the price, price can increase based on difficulty or extras characters";
     const [screenWidth, setScreenWidth] = useState(
         typeof window !== "undefined" ? window.innerWidth : 0,
       );
