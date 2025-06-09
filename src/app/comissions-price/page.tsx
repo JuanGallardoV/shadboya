@@ -102,9 +102,9 @@ export default function ComissionsPage() {
                             <h3 className={styles.subtitle}>Full Colour</h3>
                             <GallerySlider images={fullColour} />
                             <p className={styles.pricing}>
-                                Full Body: 70 USD <br></br>
-                                Half Body: 60 USD <br></br>
-                                Headshots: 50 USD
+                                Full Body: 80 USD <br></br>
+                                Half Body: 70 USD <br></br>
+                                Headshots: 55 USD
                             </p>
                         </div>
                     </div>
