@@ -127,7 +127,7 @@ export default function ComissionsPage() {
                         <div className={styles.bgOpacity} id={styles.sketches} data-id='sketches'>
                             <h3 className={styles.subtitle}>Sketches</h3>
                             <p className={styles.pricing}>
-                                Sketch prices : 30-40 USD
+                                Sketch prices : 40-50 USD
                             </p>
                         </div>
                     </div>
