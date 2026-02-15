@@ -95,7 +95,7 @@ p + .subtitle {
     text-align: center;
     margin-bottom: 4vh;
 }
-.bgOpacity p {
+.bgOpacity p, .bgOpacity div {
     font-size: clamp(10px, 1.7vmin ,25px);
     line-height: 150%;
     letter-spacing: 0.1em;

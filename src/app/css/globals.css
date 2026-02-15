@@ -16,7 +16,7 @@
 }
 
 * {
-  font-family: "CCWildWordsLower Regular";
+  font-family: "CCWildWordsLower Regular" !important;
   text-transform: uppercase;
   margin: 0;
   font-weight: bold;

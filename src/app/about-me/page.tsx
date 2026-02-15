@@ -6,7 +6,7 @@ export default function AboutPage() {
             <h1 className={`${styles.title} ${styles.mobile}`}>About Me</h1>
             <div className={`${styles.centered} ${styles.bgOpacity}`}>
                 <h3 className={styles.subtitle}>About Me</h3>
-                <p>
+                <div>
                     Hello! My name is Shadboi!, I am a Chilean artist who generally focuses on digital art while I finish my Engineering studies.
                     I currently work in the following fields in digital arts topics:
                     <ul>
@@ -18,7 +18,7 @@ export default function AboutPage() {
                     </ul>
                     use, any information regarding this will be in the TOS.
                     Hobbies: Drawing, Video games, generally Lol, TF2 and Roguelikes, music and probably streaming in the future &lt;3
-                </p>
+                </div>
             </div>
         </main>
         )
