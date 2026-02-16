@@ -6,7 +6,7 @@ import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useEffect, useState } from 'react';
 
-
+// Nombre de las imagenes del carrusel de Full Colour, tiene que ser el mismo nombre de la imagen cargada en public/draws (formato .jpg)
 const fullColour = [
     {
         name: 'tf2_spy'
@@ -25,6 +25,7 @@ const fullColour = [
     }
 ]
 
+// Nombre de las imagenes del carrusel de Drawn Background, tiene que ser el mismo nombre de la imagen cargada en public/draws (formato .jpg)
 const background = [
     {
         name: 'miss_pauling'
