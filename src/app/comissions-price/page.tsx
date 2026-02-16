@@ -22,8 +22,11 @@ const fullColour = [
     },
     {
         name: 'tf2_saxton'
+    },
+    {
+        name: 'TaskiMaiden1JPG'
     }
-
+]
 // Nombre de las imagenes del carrusel de Drawn Background, tiene que ser el mismo nombre de la imagen cargada en public/draws (formato .jpg)
 const background = [
     {
@@ -33,7 +36,7 @@ const background = [
         name: 'tatsumaki'
     },
     {
-        name: 'Kobeni_v1'
+        name: 'Kobeni'
     },
     {
         name: 'Miss_Pauling_Summer_2025'
