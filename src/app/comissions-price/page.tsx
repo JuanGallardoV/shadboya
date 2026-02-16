@@ -18,7 +18,7 @@ const fullColour = [
         name: 'tf2_fempyro'
     },
     {
-        name: 'commission'
+        name: 'Ramlethal'
     },
     {
         name: 'tf2_saxton'
@@ -34,10 +34,10 @@ const background = [
         name: 'tatsumaki'
     },
     {
-        name: 'garou'
+        name: 'Kobeni V1'
     },
     {
-        name: 'zhanna_miss_pauling'
+        name: 'Miss_Pauling_Summer_2025.'
     }
 ]
 
