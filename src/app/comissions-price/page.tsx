@@ -34,10 +34,10 @@ const background = [
         name: 'tatsumaki'
     },
     {
-        name: 'Kobeni V1'
+        name: 'Kobeni_V1'
     },
     {
-        name: 'Miss_Pauling_Summer_2025.'
+        name: 'Miss_Pauling_Summer_2025'
     }
 ]
 
